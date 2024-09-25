@@ -14,7 +14,7 @@ interface BoxProps {
 const Box = ({ box, onClick, showValue }: BoxProps) => {
   return (
     <div
-      className="border-4 border-t-0 border-l-0 w-[calc(100%/4)] h-[calc(100%/3)] text-8xl flex justify-center items-center"
+      className="border-4 border-t-0 border-l-0 w-[calc(100%/4)] h-[calc(100%/3)] text-8xl flex justify-center items-center cursor-pointer"
       onClick={() => onClick(box)}
     >
       {showValue && box.value}

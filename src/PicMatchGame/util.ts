@@ -15,3 +15,13 @@ export function getMinSecFromTimer(timer: number) {
   const sec = (timer % 60).toString().padStart(2, "0");
   return { min, sec };
 }
+
+export function shuffleArray<T>(array: T[]): T[] {
+  console.log("running");
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  console.log({ array });
+  return array;
+}
