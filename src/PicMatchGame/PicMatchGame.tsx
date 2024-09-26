@@ -89,6 +89,7 @@ const PicMatchGame = () => {
             box={box}
             onClick={boxOnClick}
             showValue={box.isMatched || box.show}
+            disabled={box.isMatched}
           />
         ))}
       </div>

@@ -2,7 +2,7 @@ import { BoxType } from "./components/Box";
 
 // This function compares two boxes to check if they have the same value
 export function comparePairValue(pair: BoxType[]) {
-  if (pair[0].value === pair[1].value) {
+  if (pair[0].value === pair[1].value && pair[0].id !== pair[1].id) {
     return true;
   }
   return false;
